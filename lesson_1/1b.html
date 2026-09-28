@@ -6,12 +6,14 @@
     <title>Card Quality</title>
 </head>
 <body>
-    <button onclick="document.getElementById('paragraph')">Show</button>
-    <button onclick="console.log('Add to cart')">add to cart</button>
-    <button onclick="console.log('+2')">+2</button>
-    <button onclick="console.log('+3')">+3</button>
-    <button onclick="console.log('Reset to cart')">clear cart</button>
-    <p id="paragraph">6</p>
-    
+    <button onclick="document.getElementById('paragraph').innerHTML=cartquantity;">Show</button>
+    <button onclick="cartquantity=cartquantity +1;">add to cart</button>
+    <button onclick="cartquantity=cartquantity +2;">+2</button>
+    <button onclick="cartquantity=cartquantity +3;">+3</button>
+    <button onclick="cartquantity=cartquantity=0">clear cart</button>
+    <p id="paragraph"></p>
+    <script>
+        let cartquantity=0;
+    </script>
 </body>
 </html>
